@@ -55,6 +55,9 @@ button {
 	display: flex;
 	padding: 20px 0;
 }
+.fullscreen--color {
+	background-color: #333;
+}
 .fullscreen__body {
 	flex: 1 1 auto;
 	max-width: 1200px;
@@ -87,4 +90,14 @@ button {
 	min-width: 200px;
 	border-radius: 20px;
 	align-self: center;
+}
+.footer {
+	background-color: #111;
+	text-align: center;
+}
+.footer__body {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 32px;
+	color: #fff;
 }
