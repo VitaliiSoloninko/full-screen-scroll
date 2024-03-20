@@ -23,7 +23,7 @@ const pageSlider = new Swiper('.swiper', {
 	},
 
 	pagination: {
-		el: '.swiper-pagination',
+		el: '.page__pagination',
 		type: 'bullets',
 		clickable: true,
 		bulletClass: 'page__bullet',
@@ -31,8 +31,8 @@ const pageSlider = new Swiper('.swiper', {
 	},
 
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.slider-arrow_next',
+		prevEl: '.slider-arrow_prev',
 	},
 
 	scrollbar: {
@@ -41,9 +41,6 @@ const pageSlider = new Swiper('.swiper', {
 })
 
 /*
-	pagination: {
-		el: '.page__pagination',
-	},
 	scrollbar: {
 		el: '.page__scroll',
 		dragClass: 'page__drag-scroll',

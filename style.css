@@ -107,6 +107,7 @@ button {
 
 .wrapper {
 	min-height: 100%;
+	position: relative;
 }
 
 .swiper {
@@ -127,15 +128,16 @@ button {
 }
 .page__pagination {
 	position: absolute;
+	z-index: 50;
 	top: 50%;
-	right: 100px;
+	left: 0;
 	transform: translate(0px, -50%);
 	display: flex;
 	flex-direction: column;
 }
 .page__bullet {
-	width: 15px;
-	height: 15px;
+	width: 20px;
+	height: 20px;
 	cursor: pointer;
 	background-color: #00000086;
 	margin: 10px 0;
@@ -214,4 +216,30 @@ button {
 	margin: 0px auto;
 	padding: 32px;
 	color: #fff;
+}
+
+.slider-arrows {
+	display: flex;
+	gap: 50px;
+	justify-content: space-between;
+	position: absolute;
+	z-index: 50;
+	bottom: 50px;
+	left: 50%;
+	transform: translate(-50%, 0px);
+}
+.slider-arrow {
+	height: 80px;
+	width: 64px;
+	border: 1px solid #fff;
+	transition: all 0.3s ease;
+}
+.slider-arrow:hover {
+	background-color: #ffffff22;
+	cursor: pointer;
+}
+.slider-arrow_prev {
+	transform: rotate(180deg);
+}
+.slider-arrow_next {
 }
